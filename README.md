@@ -1,4 +1,4 @@
-![Screenshot 2025-03-18 214316](https://github.com/user-attachments/assets/114b524f-e66a-4165-a23f-934523124622)# 2a_Stop_and_Wait_Protocol
+# 2a_Stop_and_Wait_Protocol
 ## AIM 
 To write a python program to perform stop and wait protocol
 ## ALGORITHM
@@ -20,11 +20,12 @@ while True:
  c.send(i.encode())
  ack=c.recv(1024).decode()
  if ack:
-     print(ack)
-     continue
+ print(ack)
+ continue
  else:
-     c.close()
-     break
+ c.close()
+ break
+
 
 SERVER:
 import socket
